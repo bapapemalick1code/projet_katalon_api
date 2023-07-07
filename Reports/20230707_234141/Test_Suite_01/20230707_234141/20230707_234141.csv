@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test_Suite_01,,,,2023-07-07 23:41:48,2023-07-07 23:42:00,"12,190s",PASSED
+,,,,,,,
+Test Cases/Get_all_products,,,,2023-07-07 23:41:48,2023-07-07 23:41:54,"5,843s",PASSED
+"sendRequestAndVerify(findTestObject(""Rest API/Grocery/Get all products""))",,,,2023-07-07 23:41:49,2023-07-07 23:41:54,"5,135s",PASSED
+,,,,,,,
+Test Cases/Place_an_order,,,,2023-07-07 23:41:54,2023-07-07 23:42:00,"5,960s",PASSED
+"response = sendRequestAndVerify(findTestObject(""Rest API/Grocery/Add Cart""))",,,,2023-07-07 23:41:55,2023-07-07 23:41:56,"1,434s",PASSED
+jsonSlurper = new groovy.json.JsonSlurper(),,,,2023-07-07 23:41:56,2023-07-07 23:41:56,"0,000s",PASSED
+object = jsonSlurper.parseText(response.getResponseBodyContent()),,,,2023-07-07 23:41:56,2023-07-07 23:41:56,"0,016s",PASSED
+"println(""parse cartId = "" + cartId)",,,,2023-07-07 23:41:56,2023-07-07 23:41:56,"0,000s",PASSED
+basketId = cartId,,,,2023-07-07 23:41:56,2023-07-07 23:41:56,"0,000s",PASSED
+"sendRequestAndVerify(findTestObject(""Rest API/Grocery/Add item to cart"", [""Id"":basketId]))",,,,2023-07-07 23:41:56,2023-07-07 23:41:58,"1,510s",PASSED
+"response1 = sendRequest(findTestObject(""Rest API/Grocery/Register new client"", [""username"":name, ""email"":mail]))",,,,2023-07-07 23:41:58,2023-07-07 23:41:59,"1,452s",PASSED
+object1 = jsonSlurper.parseText(response1.getResponseBodyContent()),,,,2023-07-07 23:41:59,2023-07-07 23:41:59,"0,000s",PASSED
+brtoken = accessToken,,,,2023-07-07 23:41:59,2023-07-07 23:41:59,"0,001s",PASSED
+"println(""token checked after parse = "" + brtoken)",,,,2023-07-07 23:41:59,2023-07-07 23:41:59,"0,015s",PASSED
+"sendRequest(findTestObject(""Rest API/Grocery/New Order"", [""bearerToken"":brtoken]))",,,,2023-07-07 23:41:59,2023-07-07 23:42:00,"1,196s",PASSED

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Add_new_card</name>
+   <name>Place_an_order</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>40f36f84-bf70-4533-8860-fdf646725d76</testCaseGuid>
@@ -9,7 +9,7 @@
       <combinationType>ONE</combinationType>
       <id>0ba6525f-c574-4b25-8faf-62dc36a2acf7</id>
       <iterationEntity>
-         <iterationType>RANGE</iterationType>
+         <iterationType>ALL</iterationType>
          <value>5-6</value>
       </iterationEntity>
       <testDataId>Data Files/User/UserData</testDataId>

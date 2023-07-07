@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test_Suite_01" time="7.642" tests="2" failures="0" errors="0">
+   <testsuite name="Test_Suite_01" tests="2" failures="0" errors="0" time="7.642" skipped="0" timestamp="2023-07-07 23:49:11" hostname="monsh - 192.168.1.100" id="Test Suites/Test_Suite_01">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\monsh\\Katalon Studio\\AgiltooAcademyTuto\\Reports\\20230707_234904\\Test_Suite_01\\20230707_234905"/>
+         <property name="logFiles" value="C:\\Users\\monsh\\Katalon Studio\\AgiltooAcademyTuto\\Reports\\20230707_234904\\Test_Suite_01\\20230707_234905\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="monsh - 192.168.1.100"/>
+         <property name="hostAddress" value="192.168.1.100"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="8.6.5.208"/>
+      </properties>
+      <testcase name="Test Cases/Get_all_products" time="3.265" classname="Test Cases/Get_all_products" status="PASSED">
+         <system-out><![CDATA[2023-07-07 23:49:11 - [TEST_CASE][PASSED] - Test Cases/Get_all_products: Test Cases/Get_all_products
+
+2023-07-07 23:49:11 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("Rest API/Grocery/Get all products")): Send request and verify the response successfully
+
+2023-07-07 23:49:14 - [MESSAGE][INFO] - HAR: C:\Users\monsh\Katalon Studio\AgiltooAcademyTuto\Reports\20230707_234904\Test_Suite_01\20230707_234905\requests\main\0.har
+
+2023-07-07 23:49:14 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2023-07-07 23:49:14 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2023-07-07 23:49:14 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2023-07-07 23:49:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2023-07-07 23:49:14 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2023-07-07 23:49:14 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(200): null
+
+2023-07-07 23:49:14 - [MESSAGE][PASSED] - Verify response successfully
+
+2023-07-07 23:49:14 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2023-07-07 23:49:14 - [MESSAGE][PASSED] - Send request and verify the response successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Place_an_order" time="4.176" classname="Test Cases/Place_an_order" status="PASSED">
+         <system-out><![CDATA[2023-07-07 23:49:14 - [TEST_CASE][PASSED] - Test Cases/Place_an_order: Test Cases/Place_an_order
+
+2023-07-07 23:49:14 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("Rest API/Grocery/Add Cart")): Send request and verify the response successfully
+
+2023-07-07 23:49:15 - [MESSAGE][INFO] - HAR: C:\Users\monsh\Katalon Studio\AgiltooAcademyTuto\Reports\20230707_234904\Test_Suite_01\20230707_234905\requests\main\1.har
+
+2023-07-07 23:49:15 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2023-07-07 23:49:15 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2023-07-07 23:49:15 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2023-07-07 23:49:15 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+2023-07-07 23:49:15 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2023-07-07 23:49:15 - [TEST_STEP][PASSED] - getStatusCode()).isEqualTo(201): null
+
+2023-07-07 23:49:15 - [TEST_STEP][PASSED] - CardId = getElementPropertyValue(response, "cartId"): null
+
+2023-07-07 23:49:15 - [TEST_STEP][PASSED] - println("My globale variable value: " + CardId): null
+
+2023-07-07 23:49:15 - [MESSAGE][PASSED] - Verify response successfully
+
+2023-07-07 23:49:15 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2023-07-07 23:49:15 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2023-07-07 23:49:15 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2023-07-07 23:49:15 - [TEST_STEP][PASSED] - object = jsonSlurper.parseText(response.getResponseBodyContent()): null
+
+2023-07-07 23:49:15 - [TEST_STEP][PASSED] - println("parse cartId = " + cartId): null
+
+2023-07-07 23:49:15 - [TEST_STEP][PASSED] - basketId = cartId: null
+
+2023-07-07 23:49:15 - [TEST_STEP][PASSED] - sendRequestAndVerify(findTestObject("Rest API/Grocery/Add item to cart", ["Id":basketId])): Send request and verify the response successfully
+
+2023-07-07 23:49:17 - [MESSAGE][INFO] - HAR: C:\Users\monsh\Katalon Studio\AgiltooAcademyTuto\Reports\20230707_234904\Test_Suite_01\20230707_234905\requests\main\2.har
+
+2023-07-07 23:49:17 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2023-07-07 23:49:17 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2023-07-07 23:49:17 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2023-07-07 23:49:17 - [MESSAGE][PASSED] - Verify response successfully
+
+2023-07-07 23:49:17 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2023-07-07 23:49:17 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2023-07-07 23:49:17 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("Rest API/Grocery/Register new client", ["username":name, "email":mail])): Send request successfully
+
+2023-07-07 23:49:18 - [MESSAGE][INFO] - HAR: C:\Users\monsh\Katalon Studio\AgiltooAcademyTuto\Reports\20230707_234904\Test_Suite_01\20230707_234905\requests\main\3.har
+
+2023-07-07 23:49:18 - [MESSAGE][PASSED] - Send request successfully
+
+2023-07-07 23:49:18 - [TEST_STEP][PASSED] - object1 = jsonSlurper.parseText(response1.getResponseBodyContent()): null
+
+2023-07-07 23:49:18 - [TEST_STEP][PASSED] - brtoken = accessToken: null
+
+2023-07-07 23:49:18 - [TEST_STEP][PASSED] - println("token checked after parse = " + brtoken): null
+
+2023-07-07 23:49:18 - [TEST_STEP][PASSED] - sendRequest(findTestObject("Rest API/Grocery/New Order", ["bearerToken":brtoken])): Send request successfully
+
+2023-07-07 23:49:18 - [MESSAGE][INFO] - HAR: C:\Users\monsh\Katalon Studio\AgiltooAcademyTuto\Reports\20230707_234904\Test_Suite_01\20230707_234905\requests\main\4.har
+
+2023-07-07 23:49:18 - [MESSAGE][PASSED] - Send request successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-07-07 23:49:11 - [TEST_SUITE][PASSED] - Test_Suite_01: Test Cases/Place_an_order]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

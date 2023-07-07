@@ -15,7 +15,7 @@
       <guid>15529ba0-f16f-4b15-8887-5a928718a19e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Add_new_card</testCaseId>
+      <testCaseId>Test Cases/Get_all_products</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>63ca8de2-85d9-465c-810a-42701e131a75</id>
@@ -26,16 +26,23 @@
          <testDataId>Data Files/User/UserData</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8b73ffa8-da69-4a8e-8110-89eca935ee3a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Place_an_order</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>63ca8de2-85d9-465c-810a-42701e131a75</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>clientName</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>aab42ed7-8ac8-4815-bd78-f825eec48e30</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>63ca8de2-85d9-465c-810a-42701e131a75</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>clientEmail</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>0ecd8709-75db-4dd1-80c7-b1e6b55f348b</variableId>
       </variableLink>
    </testCaseLink>

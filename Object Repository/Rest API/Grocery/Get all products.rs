@@ -25,15 +25,6 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
-   <validationSteps>
-      <id>ffa330b5-5bc8-4031-b6b3-a8bdfdb1eeb0</id>
-      <name>Vlidation Shemas</name>
-      <type>JSON_SCHEMA</type>
-      <dataType>FILE</dataType>
-      <target>RESPONSE</target>
-      <data>C:\Users\monsh\Pictures\all_products</data>
-      <activate>true</activate>
-   </validationSteps>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
