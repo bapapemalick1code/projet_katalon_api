@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Test_Suite_01</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>2b64d79e-c6e1-43f2-9a88-a3d221c7cee6</testSuiteGuid>
+   <testCaseLink>
+      <guid>15529ba0-f16f-4b15-8887-5a928718a19e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Add_new_card</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>63ca8de2-85d9-465c-810a-42701e131a75</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/User/UserData</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>63ca8de2-85d9-465c-810a-42701e131a75</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>clientName</value>
+         <variableId>aab42ed7-8ac8-4815-bd78-f825eec48e30</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>63ca8de2-85d9-465c-810a-42701e131a75</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>clientEmail</value>
+         <variableId>0ecd8709-75db-4dd1-80c7-b1e6b55f348b</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
